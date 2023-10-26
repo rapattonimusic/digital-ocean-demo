@@ -9,4 +9,4 @@ steps:
 
 # Run the Playwright tests using the Docker container
 - name: 'gcr.io/$PROJECT_ID/digital-ocean-demo'
-  args: ['docker run -it digital-ocean-demo:latest npm run test']
+  args: ['npm', 'run', 'test']
