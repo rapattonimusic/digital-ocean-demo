@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "playwright test --browser=all"
+    "test": "playwright test"
   },
   "author": "",
   "license": "ISC",
