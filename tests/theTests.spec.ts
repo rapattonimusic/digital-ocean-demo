@@ -14,3 +14,8 @@ test("Test 3", async ({ page }) => {
 
   await page.goto('https://www.google.com')
 });
+
+test("Test 4", async ({ page }) => {
+
+  await page.goto('https://www.google.com')
+});
