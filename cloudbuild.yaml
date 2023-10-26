@@ -4,8 +4,8 @@ steps:
   args: ['build', '-t', 'gcr.io/$PROJECT_ID/digital-ocean-demo', '.']
 
 # Push the Docker image to Google Container Registry (Optional)
-- name: 'gcr.io/cloud-builders/docker'
-  args: ['push', 'gcr.io/$PROJECT_ID/digital-ocean-demo']
+# - name: 'gcr.io/cloud-builders/docker'
+#   args: ['push', 'gcr.io/$PROJECT_ID/digital-ocean-demo']
 
 # Run the Playwright tests using the Docker container
 - name: 'gcr.io/$PROJECT_ID/digital-ocean-demo'
