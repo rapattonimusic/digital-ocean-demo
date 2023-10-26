@@ -12,7 +12,6 @@ COPY package.json package-lock.json /app/
 COPY tests/ /app/tests/
 COPY tsconfig.json /app/
 COPY playwright.config.ts /app/
-COPY config.toml /app/
 
 # Install the dependencies in Node environment
 RUN npm install
