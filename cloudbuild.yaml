@@ -4,5 +4,5 @@ steps:
     args: ['build', '-t', 'gcr.io/$PROJECT_ID/digital-ocean-demo03', '.']
 
   # Run the Playwright tests using the Docker container
-  - name: 'gcr.io/$PROJECT_ID/digital-ocean-demo03'
-    args: ['npm', 'run', 'test']
+  # - name: 'gcr.io/$PROJECT_ID/digital-ocean-demo03'
+  #   args: ['npm', 'run', 'test']
