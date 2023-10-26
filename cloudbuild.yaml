@@ -1,8 +1,8 @@
 steps:
 # Remove existing image if any
-- name: 'gcr.io/cloud-builders/docker'
-  args: ['rmi', '-f', 'gcr.io/$PROJECT_ID/digital-ocean-demo']
-  id: 'RemoveImage'
+# - name: 'gcr.io/cloud-builders/docker'
+#   args: ['rmi', '-f', 'gcr.io/$PROJECT_ID/digital-ocean-demo']
+#   id: 'RemoveImage'
 
 # Build the Docker image
 - name: 'gcr.io/cloud-builders/docker'

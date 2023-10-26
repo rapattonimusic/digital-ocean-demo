@@ -20,3 +20,4 @@ RUN apt-get update && apt-get -y install libnss3 libatk-bridge2.0-0 libdrm-dev l
 # Install the dependencies in Node environment
 RUN npm install
 RUN npm i -D @playwright/test
+RUN npm install -g playwright
