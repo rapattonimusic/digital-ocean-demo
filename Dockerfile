@@ -11,7 +11,7 @@ ENV PATH /app/node_modules/.bin:$PATH
 COPY package.json package-lock.json /app/
 COPY tests/ /app/tests/
 COPY tsconfig.json /app/
-COPY playwright.config.ts /app
+COPY playwright.config.ts /app/
 COPY config.toml /app/
 
 # Get the needed libraries to run Playwright
@@ -19,5 +19,4 @@ RUN apt-get update && apt-get -y install libnss3 libatk-bridge2.0-0 libdrm-dev l
 
 # Install the dependencies in Node environment
 RUN npm install
-RUN npm i -D @playwright/test
-RUN npm install -g playwright
+RUN npm list -g
